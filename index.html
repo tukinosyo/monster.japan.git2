@@ -155,7 +155,7 @@
           >
         </div>
         <div class="container-fluid">
-          <h1 class="text-center mt-3">SERVICE</h1>
+          <h1 class="text-center mt-3">~SERVICE~</h1>
           <p class="text-center">革命を世界中に</p>
           <div class="row">
             <div class="card col-md-4">
@@ -287,5 +287,17 @@
       type="text/javascript"
       src="TextfxAPI-master/jquery.textFx.js"
     ></script>
+    <input
+      type="button"
+      value="パスワードを入力して秘密のページへアクセスする"
+      onclick="gate();"
+    />
   </body>
+
+  <script type="text/javascript">
+    function gate() {
+      var UserInput = prompt("パスワードを入力して下さい:", "");
+      location.href = UserInput + ".html";
+    }
+  </script>
 </html>
